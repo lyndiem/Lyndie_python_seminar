@@ -12,28 +12,6 @@ from math import sqrt, pi
 from const import E0
 k=1.0/(4*pi*E0)
 
-# The logic is clean, your variable names are sensible, and your comments clear and helpful.
-# At this point you've gotten a pass for the assignment. A couple of recommendations:
-#-  I hadn't shown the class the technique for line continuations when this was assigned, but
-#   it would be useful here. Just leave an open parenthesis before a newline and a close
-#   parenthesis after, or precede the newline with a backslash, and Python will read it as one line.
-#-  If you write this script as a function (it's written that way in the solution code), you can
-#   use it elsewhere with a simple copy-paste. That's powerful, and I'd recommend it for other
-#   homework assignments. Naturally, a function should return results instead of printing them.
-#   Printing is really just for status updates rather than results, unless you're not in a function.
-#-  It's common to initialize your lists as empty and then populate them with the .append method.
-#   This system is good when you don't know how long the list will be.
-
-# Things I was happy to see:
-#-  You use floats instead of integers. That's good. Integer division is annoying, and forcing
-#   float format is a robust practice.
-#-  When calculating the components of the electric field, you calculated the vector and divided
-#   by the magnitude cubed. It suggests you have a strong understanding of how you can operate
-#   with vector components, which will serve you well in 8.02, here, and many other classes.
-#-  You borrowed our standard for initial comment blocks. Systems like these are used in industrial
-#   settings all over the place, and people will like working with you more if you comment like
-#   this by default.
-
 print 'Location of Charge: [m]'
 q = [None,None,None,None]               #user must input information about the charge location
 q[0] = float(raw_input ('x-coordinate='))
@@ -57,3 +35,7 @@ E[2] = (k*q[3]*(r[2]-q[2]))/(mag**3)    #calculating the k component of the elec
 E_mag= sqrt(((E[0])**2)+((E[1])**2)+((E[2])**2))     #calculating the magnitude of the electric field
 print 'E=', E, '[N/C]'
 print '|E|=', E_mag, '[N/C]'
+
+
+
+

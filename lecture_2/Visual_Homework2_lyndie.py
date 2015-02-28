@@ -13,14 +13,6 @@ from const import E0
 k=1.0/(4*pi*E0)
 a=0.5
 
-#   Well, the code works. Pass. I'd recommend you make the arrows small enough to reasonably match
-#   the charges, though that's admittedly the fault of the value assigned in the homework. I'm
-#   a fan of the different colors, and the way you used your other script as a base for this one.
-#   I'll bet that sped you up a lot. Remember, this part of the homework is to let you see something
-#   that will improve your intuition. If you can think of a thing or two to visualize that you think
-#   would be interesting or informative, feel free to add it as long as it doesn't interfere with the
-#   assigned visualization.
-
 q_p = [0, a, 0, 4*pi*E0]          #Can't enter values like 4piE0 so for the visualization assignment I'm just assigning the value now
 q_n = [0,-a, 0, -4*pi*E0]
 #print q_p, '[m, m, m, C]'                          #double checking to make sure user entered what they wanted
